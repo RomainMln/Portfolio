@@ -1,0 +1,25 @@
+\section{Master REOC}
+
+\subsection{Context}
+
+In parallel of my last semester at INSA, I decided to do a Master of Network and Telecommunication in partnership between INSA and ENSEEIHT. For this Master, we had additional courses on the Thursdays afternoon either at INSA or at ENSEEIHT. It was composed of theoretical courses as well as practical course with a small project on the INSA's side. At the end there also was an exam summering all the courses that we attended. 
+
+\subsection{Technical Aspects}
+
+During this master we had a lot of different courses on various subjects. In this part, I decided to focus on a course that I found really interesting. This course was taught at INSA by Samir Medjiah and dealt with SDN (Software Defined Network) and MANO (Management and Orchestration). 
+\\\par
+SDN is a technology that allows developers to create applications to manage the network. To do so, we centralize the intelligence of the network in one single point which is the network controller. That way, all the network devices like switches and routers receive instructions on how to handle packets. This technology allows a lot of flexibility. For example during a lab on SDN, we developed an application to redirect the trafic from a server to another server in a totally transparent way for the client. To do so, we modify the destination address of the packet from the client to redirect to another server. To do it in a totally transparent way for the end user, we also have to change the source address of the answer from the server to the address of the server that the client wanted to contact originally. That way, the client thought it was interracting with one server when in reality, the answer came from another server. The flexibility offered by SDN make it a very powerful tool for network administrators.
+\\\par
+
+The other concept that we saw during this course is MANO. It is a standardized protocol to deploy and orchestrate network functions. A network function is a function that is originally done by a dedicated hardware component like a firewall for example, that was transform into a software that can run on different generic machine. MANO is really useful because it allows to deploy and destroy network functions dynamically and automatically depending on the state and the need of the network. For example, if a network use a firewall at the entrance on the network but this firewall start to receive more traffic that it can handles, then with MANO we can deploy another firewall and a load balancer to divide the load of the network between the two firewalls.
+\\\par
+
+These two technical solutions become very powerful and interesting when deployed together. To illustrate this point we will take an example. Let's imagine a network with a visioconference between two client on opposite edge of the network. If the resources available in the network decrease, then it would degrade the quality of the communication. To avoid that, we can develop an application that will detect the lack of resources on the network and deploy with MANO and encoding on one edge and a decoding function on datacenters on the other edge of the network. To use this functions, we can reroute the traffic with the SDN Controller to force the traffic to go through this two function in a transparent way for the users of the communication. That way, we reduce the resources needed on the network for the communication and avoid the degradation of the quality, all that without the need of a human intervention.
+
+\subsection{Analysis}
+
+As a student coming from a network background (4IR-SC) I found this master really interesting as it dealt with topics of networking that we did not saw like MANO, SDN or avionics networks. I had the opportunity to learn a lot of different skills on various subjects. Unfortunately, due to difficulties to match time schedule between INSA and ENSEEIHT students, we missed a some course on subjects that seemed interesting like the modelization of a LoRa Network. 
+\\\par
+During the different course, I also noticed a difference of approach between the courses taught at INSA and the ones taught at ENSEEIHT. Indeed, I got the impression that the courses at INSA were more applied where the ones from ENSEEIHT were more theoretical and oriented on research. Indeed, a lot of teachers at ENSEEIHT gave us scientific papers that they wrote while at INSA we focused on some general concepts like virtualization, SDN and MANO with a small project to illustrate the courses. Because of that, I enjoyed more the course given at INSA as I prefer to approach the different notion through applied exercises and projects.
+%% Problème d'emploi du temps
+%% Différence entre les cours de l'INSA et de l'ENSEEIHT

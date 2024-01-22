@@ -1,0 +1,62 @@
+\section{Wireless Sensor Networks}
+
+\subsection{Context}
+
+Wireless sensor networks (WSN) is a course taught by Daniela Dragomirescu. The objective is to discover the different solutions for WSN. The theoretical part of this course is divided in two parts. The first one is introduction to telecommunication and definition of the specific needs for WSN. The sencond part of the theoretical part is done in reverse pedagogy. Every group of students had to present an existing WSN technology from the physical layer to the MAC layer. With Aude Jean-Baptiste Onnig Brulez and Marco Ribeiro Badejo, we presented Zigbee which is a WPAN for WSN.
+\smallskip
+
+After the theoretical part we had another presentation to do on the different kinds of MAC layers for WSN that exist. This work was individual.
+\smallskip
+
+Finally, the last part of this class was a project. In this project, we had to define and implement a protocol for given specifications from the physical to the MAC layer. We did this project with Aude Jean-Baptiste, Emily Holmes, Onnig Brulez, Cyprien Heusse, Arthur Gautheron and Marco Ribeiro Badejo.
+
+\subsection{Technical Aspects}
+
+%% MAC Layers
+This course made me discover the different specifications for existing WSN protocols like Zigbee, Bluetooth ... These protocols have specific needs compared to classical networks. Indeed, WSN generally require low power consumption as the sensors can be placed somewhere it is not possible to charge it. To do this part, the most common solution is to disable the radio communication for some time. It is the inactive or sleeping time. Devices turn off their radio-communications component which is often the most power consuming.
+\smallskip
+
+For the second assignment, we had the opportunity to see all different kind of mac layers. There are three main kinds of MAC layer:
+\begin{itemize}
+    \item Contention based : Send data when the medium is available (commonly CSMA/CA)
+    \item Scheduled based : Every device get a time slot assigned in which they are the only one to transmit. That way, they have some guaranties on the bandwidth
+    \item Hybrid: Par of the superframe is Contention based and the other part is Scheduled based (Zigbee for example)
+\end{itemize}
+
+Finally, for our project, the requirements was a medical application for a elderly person with a falling sensor that sends data if the person fall and a gas sensor. During this project we splited the work between members of our group. With Arthur Gautheron and Cyrpien Heusse, we worked on the implementation of the MAC layer. We used python with a ZMQ library (similar to MQTT) for the communication with the physical layer. We developed two different programs, one for the gateway and one for the end devices.
+
+\subsection{Skill Matrix}
+
+\begin{itemize}
+    \item Be able to analyse and evaluate protocols dedicated to Wireless Sensor Networks / IoT
+    \item Understand and master the optimisation of IoT communication protocols at MAC level 
+\end{itemize}
+
+For this course, I think that through the project, I was able to master these skills. Indeed, this course is really focused on being able to analyses and criticize the different technical solutions for a WSN. In addition to that, with my background in  networking, I already had a solid base on these concepts.
+
+\subsection{Analysis}
+
+In my opinion this course is interesting but suffer from a structural problem that I will define in the following paragraphs.
+\\\par 
+
+I think that it was more suited for students that does not come from the network background. Indeed, I feel like we already approached the majority of the subjects of this course during our 4th year. For example we saw CSMA/CA last year during the course of Slim Abdelatif on Wifi.
+\\\par
+
+As mentioned in part \ref{Analysis_5G} I do not appreciate the reverse pedagogy method as we are more focused on our own presentation rather than getting the information from every group.
+\\\par
+
+I also think that this course is too long and has too much assignments. Indeed for only 1 ECTS, we had two presentations to prepare which took a long time in addition to a big project. I think that this course should be more focused on the project as we did not have enough time for implementing a fully working physical layer. In addition to that, I think that lab in autonomy is just a way to justify that we have enough time for the project without having to assign a teacher to the lab to help when students get stuck which happens a lot. In my opinion, the labs in autonomy should be removed for more sessions with teachers.
+\par
+Following this point, I think that the second assignment is not really justified as it is just a summary of all the presentation from the first assignment. Moreover, I do not think it is relevant to ask all the student to prepare the exact same presentation on the same topic.
+\\\par
+
+Finally, for the project, I think that it would be useful to have tracks on how to implement the protocol. Indeed, we only had a small presentation on GNU Radio for the physical layer which was not enough to understand how the software works and how to implement a working physical layer. As for the MAC layer we decided to use python and ZMQ because it found that there is a ZMQ block in Gnu Radio but we had to find this on our own and I think that to start a project we should have at least all the keys to do it, which was not the case.
+
+
+%% Already done in SC
+%% Reverse pedagogy
+%% Too much thing in the course
+%% Questinable exam to make us all do the same thing
+%% Project without any way to do it
+%% No course on GNU Radio
+%% Hours in autonomy is not hours

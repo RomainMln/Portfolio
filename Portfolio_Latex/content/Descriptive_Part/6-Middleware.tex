@@ -1,0 +1,45 @@
+\section{Middleware for IoT}
+
+\subsection{Context}
+
+Middleware for IoT is a course taught by Thierry Monteil. The objective is to discover different communication protocols for IoT allowing interactions between different applications. The theoretical part of this course was a MOOC introducing the concepts of the course and the practical part allowed us to use and illustrate the concept approached in the theoretical part. 
+\\\par
+As the IoT market is very large there is no standard solution for communication between IoT devices. That is the purpose of a middleware. It is a software that allows to interconnect two different applications.
+
+\subsection{Technical Aspects}
+
+During this course, we talked about the different communication protocols used for IoT. The first one is MQTT (Message Queing Telemetry Transport). MQTT is particularly used for IoT devices. With this protocol there are two kind of nodes, the publisher and the subscribers. Publishers publish data in a topic and subscriber get all the data published on a specific topic. It uses a broker which is a central server storing all the messages. As this concept is really easy to understand and to implement we can find similar protocols used in the industry. One of the example I can think about is Kafka which is a similar protocol with topics, publisher and subscriber designed for IoT real time communication. The difference with MQTT is that it stores the messages over time and use redundancy in different brokers to avoid single point of failure. 
+\\\par
+
+The other communication protocol that we saw during this course is OneM2M. It is a protocol developed by different standardisation organizations accros the world. It was designed to propose a standard for interoperability between IoT architectures. It is based on a REST architecture. A server has a hierarchical storing space composed of Application Entities (AE) which represent features available in which there are containers (CNT) which are category of data and Conntent Instance (CI) which is an instance of data published. A IoT device can publish or read an information from a container in an AE.  
+%% OneM2M
+%% MQTT
+
+\subsection{Skill Matrix}
+
+\begin{itemize}
+    \item Know how to situate the main standards for the Internet of Things
+    \item Deploy an architecture compliant to an IoT standard and implement a sensor network
+    \item Deploy and configure an IoT architecture using OM2M
+    \item Interact with the different resources of the architecture using REST services
+    \item Integrate a new technology into the deployed architecture
+\end{itemize}
+
+As I will mention in the Analysis part, the organization and content of this course really harden the comprehension of this course. With these problems, I do not think that I master any of the skills present in this matrix with the exception of the one about REST services as we saw that in the SOA course. I do not think that I fully understood the OM2M standard as it was poorly explained and illustrated in the course and labs. The only concept of this course that I feel mastering is the MQTT protocol as it is a very simple protocol and that I already saw during my 4th year internship.
+
+\subsection{Analysis}
+
+As for WSN, I think that the content of this course is really interesting as if answer an important problematic of IoT which is interoperability of IoT device. However, it also faces a lot of problems which leads to difficulties to get all the information from the course.
+\\\par
+
+The first major problem of this course is the MOOC. Indeed, the content and the form of this course present huge problems. For the form, the course is taught by a synthetic voice. It is very dehumanizing and creates the impression for students that the teachers did not involved themselves enough in the course to record their own voice for the lectures. In addition to that, during some part of the lecture a significant part of the video (a third of certain videos) are unlistenable as the encoding of the synthetic voice bugged and prevents us from understanding the content of the course. As mentioned by the teacher, the course is up for about 6 years so this is really a shame that such huge bugs are still present. 
+\par
+For the content of the course, it feels like only a small part is dedicated to middleware and a too large part is dedicated to explaining other concepts that we already saw in other courses. For example, there are videos on SOAP and REST architectures which are the same than the one from SOA. For the content on middleware, we only talk about OneM2M which is supposed to be a important standard but I think that we do not have enough details on how it works. Indeed, after watching the course and to write the technical aspects of this part, I went to the official website of OneM2M and I saw a lot of concepts that I did not understand or some core features that were not approached during the lecture. To conclude, I think that for a better understanding of this course, this MOOC should be done again from scratch with the voice of the different teachers and with a new approach on the content.
+\\\par
+
+A second problem regards the form and the content of the labs. Firstly, we had to install all the software for the labs (MQTT broker, Node-Red, OneM2M server ...) on our personal computers. In my opinion, this is not normal and all the labs of the university should be done (or at least feasible) on the computers of the university. The university should provide us all the resources to work and do the labs and project, which was not the case here. This led to related problems like the fact that we spent a major part of the labs in class to install/debug the software that we needed for the lab. This is time wasted that we did not use on understanding the notions of the course. 
+\par
+For the content of the labs, I think that there were not elaborate enough. Indeed, some part of the subject of the labs were too blurry and we had questions like "create an application using MQTT". I think that for a better understanding of the course, the subject of the labs should have more precise question and better defined.
+\\\par 
+
+Finally, I feel like that during the course we should have understand that OneM2M is a better and more complete solution for IoT middleware which, after talking to other students, we did not really understand why. Indeed, for the labs, we developed an application to interconnect a sensor (a button) and an actuator (a led) and we had to develop the exact same application using OneM2M as if the purpose was to illustrate that it is a better solution. However, it only appeared as a more costly and harder solution that MQTT. A major part of the class did not understand the advantages of OneM2M over MQTT and in which case it would be more interesting to use OneM2M. 

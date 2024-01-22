@@ -1,0 +1,55 @@
+\section{Service Oriented Architecture}
+
+\subsection{Context}
+
+Service Oriented architecture is a course taught by Nawal Guermouche. The objective of this course is to discover legacy and actual architectures for software engineering. The theoretical part of this course is done through a MOOC (Massive Open Online Course) composed of many videos on different topics. As a student coming from a computer science background it is very interesting to know the different standards architecture for software engineering as we are probably going to work in this field.
+\smallskip
+
+The practical part of this course is divided in two parts. The first one is an introduction to the three different architectures that we define in part \ref{technical aspects}.
+\smallskip
+
+The second part of the labs for this course is a project that goes further into the last and most recent type of software architecture.
+
+\subsection{Technical Aspect} \label{technical aspects}
+
+The first architecture that we saw during this course is SOAP (Simple Object Access Protocol), a legacy architecture. This protocol allowed to have a simple interface between clients and a server. All the methods and interactions are stored in the WSDL (Web Service Description Level). With this document, a developer could then create an application using a web service by making soap requests to the web service to interact with it even if it use a different programming language.
+\smallskip
+
+The second architecture is REST (Representational state transfer). This architecture uses the web protocol HTTP to enable one or many interfaces depending on the need of the service. The REST architecture use 4 different HTTP requests for different uses: 
+
+\begin{itemize}
+    \item The POST request is used to create content for the service (for example a new user).
+    \item The GET request is used to get information from the server to the client.
+    \item The PUT request is used to modify content that already exists
+    \item the DELETE request is used to delete content from the service
+\end{itemize}
+
+This architecture is way better than the SOAP one because as it uses HTTP which is a common protocol, it is really easy to use and does not need the consultation of a document to know all the services available. On the server end, unlike SOAP, many services can coexist on the same port as long as they use different URI.
+\smallskip 
+
+The last and most recent Architecture is the microservices architecture. With this architecture, a service is divided in a lot of little microservices all independents from the others. That way it simplifies a lot the programming for developers as the feature they need to create are very small. To recreate a whole service, we need interactions between all the microservices. To do so we use REST interfaces. A user can make a request to an entry point which will then automatically make requests to other microservices. That way, the architecture is very scalable as it is easy to add or modify a feature with new microservices.
+
+\subsection{Skill Matrix}
+
+\begin{itemize}
+    \item Understand the related concepts and features of a Service Oriented Architecture
+    \item Develop a distributed architecture using  web services
+    \item Deploy and configure an SOA using SOAP
+    \item Deploy and configure an SOA using REST
+    \item Design, develop, and deploy a microservice architecture
+\end{itemize}
+
+For the Service Oriented Architecture course, I think that the majority of skills aimed by the course are relevant except the one regarding SOAP. Indeed, I think that for student we focused on REST and microservices architecture as it is the actual and future software architecture while SOAP is a legacy architecture that is generally not implemented anymore. However, during this course, we approach all the different aspects of SOA and I think that I master every skill in this matrix with the exception of being able to deploy a SOAP architecture, which is in my opinion not very important.
+
+\subsection{Analysis}
+
+Overall this course is usefull as the REST and microservices architectures are really implemented in the industry and make programming easier. However, I do not think that studying legacy architectures like SOAP is useful as it does not exist anymore, is very heavy and that newer architectures does not take anything from SOAP.
+\smallskip
+
+For the theoretical part, I think that the MOOC format can be adequate for this course as we just have to explain the different architectures. However, I think that the MOOC that we followed was too blurry. Indeed, I found it hard to understand the concepts. Maybe a way to clarify these would be to illustrate more the points of the course through examples.
+\smallskip
+
+For the practical part of the course, I found the project interesting as it helped us to illustrate the concepts of the course. However, I found unfair that some groups did not have to do this project if their Innovative Project uses services oriented architectures. Indeed, as the Innovative project is the big project of the year, giving more hours dedicated to it depending on the subject is unfair.
+\smallskip
+
+In addition to that, for the project of the course, we did not have any course on Continuous Integration and Continuous Deployment (CI/CD) but it was mandatory to implement which made this part harder as we had to look for it ourself online. For the CD part, we did not have any platform to deploy our project which resulted in students having to create accounts on Microsoft Azure or AWS which should not be mandatory in my opinion.

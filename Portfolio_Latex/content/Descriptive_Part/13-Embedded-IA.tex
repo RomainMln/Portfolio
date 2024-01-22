@@ -1,0 +1,24 @@
+\section{Embedded AI for IoT}
+
+\subsection{Context}
+
+Embedded IA for IoT is a course taught my Philippe Leleux. In this course we approached the fundamental concepts of AI in an IoT context. We saw the theoretical concepts during the lecture then we applied and analyses an implementation of AI for an IoT application. The specification of this little project was to detect the fall of elederly person for a retirement home. The objective was to design and give the guidlines on how to create and train an AI for embedded bracelet. You can find the results of our work with Aude Jean-Baptiste in the form of a python notebook.
+
+\subsection{Technical Aspects}
+
+As it is the major part of AI that we studied, we will focus on Machine learning with Neural Network (NN)
+Before applying an AI o an IoT context, we first need to understand the concept of AI. To work properly, an AI need to be trained, to do so, there are three different kind of training. Here we only will focus on supervised training which is the only type of training that we saw in details. To do this kind of training, you provide to the NN some data associated with the expected ouput. That way, the NN can train by changing its weights. By doing that on a large number of example we train the AI. After that we can provide new example without label and the AI return a value that it guesses based on its weight and the input. 
+\\\par
+As an AI can be really heavy, it is hard to implement it directly on an embedded device that has limited computation power. To be able to port the AI to the embedded device, we need to reduce its size. To do so we apply what is called pruning. It consists of deleting the weights in the NN that are not really relevant on the choice of the output (small weights compared to others on the same perceptron). That way, we can easily delete 80\% of the weights without degrading much the accuracy of the AI. In some case it can even increase the accuracy as it prevent overfitting (the AI was too trained and does not guess correctly the results).
+\\\par
+In the end, to optimize the implementation of the AI on the device, we can transform it in a tensorflow lite model that will use an interpreter to run the AI. By pruning our mode and using an optimized interpreter for our hardware we can put an AI on an embedded system with limited resources.
+
+\subsection{Skill Matrix}
+
+We were not provided the skill matrix for this course, so I would try to analyses the skills that I could developed. As a student from computer science background, we already saw the basic concepts of IA, however, here these concepts are adapted and applied for an IoT context. The theoretical and especially the practical classes of this course helped me mastered the concepts of AI for an IoT context with pruning and adapting the AI to an embedded system with an optimized interpreter. With the labs of this course, we also could develop the conception of an AI based on the specifications of a particular problem. 
+
+\subsection{Analysis}
+
+This course was really interesting and was I my opinion pertinent for our class. Indeed, a lot of IoT application use AI when they do not seem compatible. Indeed, AI often consumes a lot of resources while embedded device only have limited resources.
+
+I also appreciated that this course made us question about the relevance of implementing an AI. Is it necessary? and if yes what kind of model? What kind of training? How do we optimize it? This kind of reflection is interesting has AI become really popular and we start to see some implemented everywhere even if it not particularly necessary.

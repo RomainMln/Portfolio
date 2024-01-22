@@ -1,0 +1,38 @@
+\section{Security for Connected Objects}
+
+\subsection{Context}
+
+A subject that is often left behind in IoT is security. Indeed, as the main objective of most IoT device is to be efficient while being low power, the security in those devices in often minimal perhaps non existing. As these devices are mainly wireless, they become a perfect targets for hackers. Hacking IoT device can lead to really negative consequences. For example if domestic devices are not secured enough, a hacker could use this vulnerabilities to gain a total access on the house.
+\\\par
+In this context, we followed a course entitled Security for Connected Object taught by Eric Alata. This course is an introduction to some software and hardware security targeted specifically for IoT needs. It is composed of theoretical class to explain the concepts behind a certain topic followed by a one or two labs on the same topic. That way we had the opportunity to see a wide range of topics regarding security. 
+
+\subsection{Technical Aspects}
+
+During this course, we saw a lot of different concepts.
+\\\par
+Firstly, we studied vulnerabilities in communication protocols and how to design one. For that we used the proverif with is an online tool that helps to detect vulnerabilities in communication protocols. To do so, you pass different conditions and mathematical expression describing your protocol.
+\\\par
+Secondly, we saw the different mechanism for securing web pages. Indeed, a lot of IoT solutions uses web pages to display the data collected by sensors. We saw the danger of SQL injection that can be use retrieve data stored in the database which can be used to retrieve password for admin account. This can also be used to drop every data from the database. To prevent this types of attack, we can run code that parse the SQL request and detect special character that would permit such injections and use backslashes to prevent it. We also saw some attacks to steel the cookie from other legitimate users in order to gain privileges. 
+\\\par
+These security solutions were mainly software. During the course, we also studied the behaviour of microprocessors pipeline to be able to reverse engineer a microprocessor to understand its properties. We used some functionalities like the prefetching to get the size of a line of cache and the whole size of the cache. 
+\\\par
+At the end of this course, we also saw the basic concepts of cryptography. We could study some protocols like AES, symetrican and asymetrical cryptography. During the labs we saw the certification process with the generation of the public and private key in order to sign the certificates for servers so that client can be sure that the servers that they try to access are legitimate.
+
+\subsection{Skill Matrix}
+\begin{itemize}
+    \item Understand the fundamentals of security
+    \item Be able to identify security weaknesses in an IoT architecture
+    \item Be able to assess the impact of exploiting a security vulnerability in an IoT architecture
+    \item Be able to propose adequate security counter-measures
+    \item Be able to design secure communication protocols for IoT
+\end{itemize}
+
+This course really made me develop my skills on security. I was able to understand and master the fundamentals concepts of security with the theoretical class as well as the counter-measures and the design of a secure communication protocol. However, as this course is not really focused on the security for IoT networks, I do not think that I master the identification of security weaknesses in an IoT architecture and the impact of exploiting a security vulnerability in an IoT architecture even if I have a good understanding of these concepts.
+
+\subsection{Analysis}
+
+This course was genuinely very interesting. We had the opportunity to see a lot of different part composing the security of IoT devices and more generally web security.
+\\\par
+I particularly enjoyed the fact that this course was meant to be an introduction to security and did not aim to makes us specialist about some security aspects. That way, we had the opportunity to discover more topics and develop a wider range of skills. The structure of the course with a lab associated with one or two theoretical class was really interesting in my opinion.  
+
+However, I think that this course does not focuses on the concept of security for the IoT field. Indeed, we know that the security in IoT devices is generally neglected in profit of the power efficiency but we did not approached any attacks regarding IoT devices and the concepts were mostly generic. The only part that could apply to IoT devices is on the security of communication protocols but it was still very generic. 

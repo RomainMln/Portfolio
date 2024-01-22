@@ -1,0 +1,37 @@
+\pagenumbering{gobble}
+\thispagestyle{empty}
+
+\pagenumbering{gobble}
+\maketitle
+\vspace{0.5cm}
+\hrule
+\vspace{1cm}
+
+\noindent\begin{tikzpicture}[remember picture, overlay, shift={(current page.south west)}]
+    %Images
+    \node[anchor=north west] at (2,27.7) {\includegraphics[height=1.225cm, keepaspectratio]{cover/meta/logo_insat.pdf}};
+\end{tikzpicture}
+
+
+
+\newpage
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\projecttitle}
+\cfoot{}
+\rfoot{}
+\doublespacing
+\tableofcontents
+\singlespacing
+\newpage
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{\projecttitle}
+\cfoot{}
+\rfoot{\thepage}

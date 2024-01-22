@@ -1,0 +1,100 @@
+\section{Internship at TNO in the netherlands}
+
+\subsection{Environment and context}
+The Netherlands Organisation of applied science research (TNO) is a Dutch research laboratory
+that has 24 sites in the Netherlands, 1 in Belgium and 1 in Japan. It is composed of 6 mains units :
+\smallskip
+
+\begin{itemize}
+    \item Mobility \& Built Environment
+    \item Energy \& Material Transition
+    \item \textbf{Defense, safety \& security}
+    \item Healthy living  \& work
+    \item High Tech Industry
+    \item ICT, Strategy Policy
+\end{itemize}
+\smallskip
+
+I was part of the Defense, safety and security. I was assigned to the Softanet Project which
+objective is to develop the interaction between federal Software Defined Network (SDN) in order to
+establish end to end slicing allowing us to give guaranties (on the bandwidth, delay and jitter) to
+the end users.
+\smallskip
+
+I chose to do my 4th year summer internship at TNO because I was really interested in having
+an international working experience to see the differences with a french company. In my opinion,
+having this vision of the work place in two different countries is really useful for an engineer because
+it allows discover new way of thinking, working and dealing with problems and in our future work
+implementing the best from the two worlds to get a better work environment and an optimal
+efficiency.
+
+\subsection{My function}
+
+
+My role in the softanet project was to design and deploy monitoring functions inside a SDN.
+The need here is to know the state of our own network with how much resources are available.
+Firstly, it would allow an administrator to check that everything is working, to be warned when a
+link is down ... Secondly, as it is a SDN, we could automatically accept or refuse new connections
+to the network based on the state of the network.
+
+
+\subsection{Technical solutions}
+
+To implement this monitoring functions, I used prometheus which is a software that allows to
+"scrape" different targets to collect metrics from these targets. I used the snmp exporter as well as
+the sflow collector exporter and the node exporter that exposes more metrics from the devices for
+prometheus to scratch. These exporters are network oriented and allowed me to pull new metrics
+like the actual and max bandwidth of each link, if they are up and other information like the number
+of packet loss.
+\smallskip
+
+As we are in a SDN context, I also used the network controller, here OpenDayLigh (ODL) which
+is an open source network controller. By making request to the northbound API of the controller,
+I could get the topology of the network in a JSON file. By parsing the topology and mixing it with
+the metrics that I got from prometheus, I could construct a graph with the topology of the network
+and the state of each link. To do that, I used Grafana. It is a software that allows us to construct
+graphs based on metrics that we provide. It is a relevant solution in my case because it has a pro-
+metheus and JSON API plugin that allows me to import the appropriate data sources for my graph.
+Finally, my last mission was to deploy all these monitoring functions dynamically through the
+use of scripting. To do that, I used Ansible which is a scripting software that by connecting to
+targets through ssh can manage hosts. That way, I could install and configure automatically all the
+software needed on the different targets
+
+
+\subsection{Problems faced and solved}
+
+During my internship, I faced some problems. The first main challenge was that when I arrived
+I did not have any experience in monitoring networks. I knew some protocols that I studied in
+my 4th year communicating systems like SNMP (Simple Network Management Protocol) but this
+protocol is really limited. To solve this problem, I spent my first month looking online on all the
+different existing solution to monitor networks. I also had the opportunity to talk a lot to expert
+in the company that knew some software like prometheus or grafana or sflow so I could find a first
+track to begin my searches.
+\smallskip
+
+For the infrastructure of deployment, I had to use TNO private cloud with Openstack to deploy
+Virtual Machines (VMs) for implementing my topology. I did not had at that time any knowledge
+on how cloud worked so I had to learn how to use it efficiently.
+
+\subsection{Skills learned}
+
+From a technical point of view, I could learn a lot in network by doing my researches but mainly
+by talking to experts in networks that had a lot of experience in this domain. I learned a lot about
+monitoring and how to implement it. I also could learn and manipulate some SDN which is a concept
+that we see in 5ISS. I also could discover scripting deployment with ansible which is something that
+I really enjoyed doing.
+\smallskip
+
+From a personal point of view, this internship help me to confirm my professional project.
+Indeed, I am now sure that I want to be a networking engineer as it is something I really enjoyed.
+I also could develop my English, I had the opportunity to discuss with people from all around the
+world working at the company which helped me to discover new cultures, way of thinking and way
+of working which is really enriching.
+
+
+\subsection{Analysis}
+
+As mentioned before this experience was very enriching and I could learn a lot in networking.
+However, for the drawbacks of this internship, I would have liked to be part of a group working
+on the same subject because it would have gave me the opportunity to interact more with other
+employees and to fully discover how to work in team in a company.

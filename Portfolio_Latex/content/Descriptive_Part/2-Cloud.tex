@@ -1,0 +1,43 @@
+\section{Cloud and Edge Computing}
+
+\subsection{Context}
+
+The first course that I could follow in 5ISS was Cloud and Edge computing, taught by Sami Yangui. The objective of this course is to discover the virtualization techniques used in the industry and in Cloud service providers. I was very interested on this matter as networks are core components of Cloud infrastructures. In addition to that, the Cloud market strongly increased this past year making it one important solution to approach for future engineers. This course is divided in a theoretical and practical parts which is in my opinion the most efficient way to learn about the subject.
+
+\subsection{Technical aspects}
+
+During this course, we discovered the two main virtualization methods which are containers and virtual machines (VM). The objective for both methods is to provide multiple isolated environments sharing the same hardware. That way you can provide on demand environment to execute code and deploy project but you can also just provide computation power to end users. The way these two method differentiate is by how they are working and their level of isolation. 
+\smallskip
+
+Containers run over the operating system (OS) of the host machine. They share the kernel with the host machine and make call to that kernel to use their environment. They have the advantages of being very light and easy to deploy as only a small overload is required to deploy a container. However, as they uses the same kernel as the host machine, the kernel of the container deployed should be the same as the one from the operating system of the host. That means that it is not theoretically possible to run a Linux container on a Windows host and vice versa (in practice it can be done through the use of some software like docker desktop on windows). Another disadvantage of containers is that it does not provide a fully isolated environement as the container uses the kernel of the host OS. They are mainly used by developers so that they can run and share code to other user while being sure that they can execute it and that there will not be a problem with the executing environment.
+\smallskip
+
+On the other hand VMs consists of installing an hypervisor. They are two types of hypervisor but we will focus here on type 1 as they are more efficient and it is what is used in Cloud infrastructures. Type 1 hypervisor are software that you implement on "bare metal" (directly on the hardware) and that allows to run multiple OS on the same machine. You can allocate parts of the resources of the host machine to the VM. They present different characteristics compared to containers. For the pros, they present a totally isolated environment, that way a compromised VM cannot act on another VM even if it is on the same hardware. It is also possible to install as many OS as you want (and as long as the physical host have resources) on the same hardware. These OS can be totally different, it is possible to deploy Windows and Linux VMs on the same machine. However, for the cons, it is much more heavier than the containers as every VM has its own OS which can be very heavy. This solution is mainly used by cloud provider to propose IaaS (Infrastructure as a Service) where you can pay to have a VM running in their datacenters.
+
+\subsection{Practical Work and Difficulties}
+
+During our labs we had the opportunity to use OpenStack which is an open source software that creates and manage different VMs. We had a subject where we needed to implement an infrastructure for a client with one calculator service with an entry point that could be used from the public internet and 4 VMs on a private network that would execute some simple actions like addition, multiplication subtraction  and division. The main calculator service would have to make call to the other sub service to get the result. It was very interesting labs because in addition to discover Cloud infrastructure and OpenStack we could discover the micro-services architecture.
+\smallskip
+
+Some difficulties that we had was about the automatic deployment of the infrastructure with the openstack python client. Indeed, we did not have the documentation on how to use it so we had to look at it ourself and as it is a big documentation, find the relevant part to implement what we want. 
+\smallskip
+
+The last lab of this course was dealing with Edge computing which is to get the calculation aspect as close as the end device as possible to reduce the delay in the calculation and that way have powerful real time services. It is particularly used in 5G with the concept of slicing where the applications that have the most constraint on delay and jitter have their own slice with calculation power near the devices.
+
+\subsection{Skill Matrix}
+
+\begin{itemize}
+    \item Understand the concept of cloud computing 
+    \item Use a IaaS-type cloud service
+    \item Deploy and adapt a cloud-based platform for IoT with autonomic computing
+    \item Convert a PaaS into an autonomic system 
+\end{itemize}
+
+Regarding these skills, I think that they are relevant compared to the content of the course. I feel that I master every skill presented. The theoretical classes made us understand the concepts of cloud computing and for the practical classes we could manipulate Openstack which is a cloud service and we were able to deploy an autonomic system of microservices to implement a calculator. However, even if this course was really good and interesting I do not really feel that we aplied it to the field of IoT.
+
+\subsection{Analysis}
+
+As mentioned in the context, I was really exited to do this course as I find the subject very interesting and it was in my opinion a great introduction to virtualization and cloud computing. We had the opportunity to work with open source technology with openstack which is something that lack at INSA and that we should be more sensitized. Indeed Opensource technologies is very important for engineers as it represent the dynamic of sharing knowledge. As INSA has a role in training the engineers of the XXI st century, it should push the usage of Opensource technologies.
+\smallskip
+
+However, a drawback of this course is the fact that we do not have any lecture on Kubernetes while it is a very important technology for the course. As we do not have any training and theoretical knowledge on this software, it is hard to follow and fully understand the last lab of the course
