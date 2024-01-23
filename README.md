@@ -12,7 +12,7 @@ You can also find in the [Project Report](./Project%20Report/) folder, all the r
 
 I would like to use this part to thank all the students of ISS that I had the opportunity to interact with. It was very enriching to exchange an work together and I learnt a lot from our interactions.
 
-I also would like to thank all the teachers of ISS. I could discover a bunch of new fields in which I had no knowledge in like electronics and many others.
+I also would like to thank all the teachers of ISS. I could discover a bunch of new fields in which I had no knowledge in like electronics and many others thank to them.
 
 # Contact
 
