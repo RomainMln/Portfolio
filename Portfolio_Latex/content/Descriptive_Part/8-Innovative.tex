@@ -2,23 +2,23 @@
 
 \subsection{Context}
 
-During this year in ISS, we have the opportunity to work all over the semester on an innovative project. We work in groups of 4 or 5 students on a project we chose among several subjects which some are propose by industrial companies. I worked with Aude Jean-Baptiste, Emily Holmes and Cyprien Heusse on a project proposed by Continental. The project is entitled Advanced Cyclist Assistance System (ACAS). The main objective is to increase cyclist safety as more and more people die on the road. \par
+During this year in ISS, we have the opportunity to work all over the semester on an innovative project. We work in groups of 4 or 5 students on a project chosen among several subjects, with some proposed by industrial companies. I worked with Aude Jean-Baptiste, Emily Holmes and Cyprien Heusse on a project proposed by Continental. The project is entitled Advanced Cyclist Assistance System (ACAS). The main objective is to increase cyclist safety as more and more people die on the road. \par
 To do so, we have to both detect a danger for the cyclist and to warn the cyclist of the incoming danger.
 \\\par
-For the detection part, it uses a camera placed on the back of the bike which is connected to a jetson board which is an embedded system that analyzes the images taken by the camera. A pre-trained IA is responsible to detect the danger. This step of detection has been done by Continental. On our side we are responsible to create the warning system.
+For the detection part, it uses a camera placed on the back of the bike, connected to a jetson board which is an embedded system that analyzes the images taken by the camera. A pre-trained IA is responsible to detect the danger. This step of detection has been done by Continental. On our side we are responsible to create the warning system.
 \\\par
 For the warning system, we needed to alert the cyclists without perturbing them on the road. To do so, we firstly developed an android application that connects to the jetson board through Wifi in order to get notifications in case of a danger. When it happens, the application display the video in real time of the rear view of the bike with the detected danger circled. That way, the cyclists can see the identified danger without needing to turn themselves. Another system designed to alert the cyclists is a vest that has integrated haptic and bluetooth modules in order for the jetson board to send orders to vibrate to the vest to alert the cyclists.
 \\\par
 
-As some part of this project are confidential, the report is not available on the github.
+As some part of this project are confidential, the report is not available on the github repository.
 
 \subsection{Technical Aspects}
 
 During this project we had the opportunity do develop a lot of different technical skills. As students coming from a computer science and more precisely a network background, I had the opportunity to use my knowledge in networking. Indeed, in order to work efficiently on the jetson, we wanted to use SSH to work with our own machines. To do so, we configured a DHCP server on the jetson that would automatically give us an IP address when we would connect our pc through ethernet. 
 \\\par
-In addition to that, for this project, we had the communication protocols between the jetson and the phone as well as between the jetson and the vest. With my knowledge and considering the requirements for the project (bandwidth to send video, QoS ...) we  decided to use Wifi for the communication between the jetson and the phone and Bluetooth between the jetson and the vest.
+In addition to that, for this project, we had to chose the communication protocols between the jetson and the phone as well as between the jetson and the vest. With my knowledge and considering the requirements for the project (bandwidth to send video, QoS ...) we  decided to use Wifi for the communication between the jetson and the phone and Bluetooth between the jetson and the vest.
 \\\par
-Finally, I was responsible to create the android application following a design that Cyprien and Emily did. As I never developed an application neither I ever used Kotlin, this was very challenging. I had to learn a lot about the Kotlin language and how to integrate video streaming into an application. 
+Finally, I was responsible to create the android application following a design that Cyprien and Emily did. As I never developed an application neither I ever used native React, which is a Javascript framework, this was very challenging. I had to learn a lot about the the Javascript language and how to integrate video streaming into an application. 
 
 \subsection{Skill Matrix}
 
@@ -30,7 +30,7 @@ Finally, I was responsible to create the android application following a design 
     \item Produce a report (in English) for the developed project 
 \end{itemize}
 
-For this project, the skills aimed are really well defined. Indeed, as this project was proposed by a company it is a real-life problem that we have to face and analyses. The variety of background and by extension skills in our team ease and make interesting the sugestion and implementation of a whole technical solution for our problem. And finaly, as the report and the defense of the project are done in English, this project help  us to develop our presentation, debating and writing skills in English. To conclude, I think that through this project I was able to master all the skills present in the matrix.
+For this project, the skills aimed are really well defined. Indeed, as this project was proposed by a company it is a real-life problem that we have to face and analyses. The variety of background and by extension skills in our team ease and make interesting the suggestion and implementation of a whole technical solution for our problem. And finally, as the report and the defense of the project are done in English, this project help  us to develop our presentation, debating and writing skills in English. To conclude, I think that through this project I was able to master all the skills present in the matrix.
 
 \subsection{Analysis}
 
